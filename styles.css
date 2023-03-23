@@ -1,0 +1,14 @@
+#container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 400px;
+}
+
+.grid {
+    display: flex;
+    border: 2px solid red;
+    width: 21px;
+    height: 21px;
+}
