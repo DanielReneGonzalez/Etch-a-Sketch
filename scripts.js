@@ -13,5 +13,4 @@ grid.forEach(element => {
 });
 function draw(e){
     e.target.classList.add('ink');
-    console.log(e)
 }
