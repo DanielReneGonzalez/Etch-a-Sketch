@@ -12,3 +12,11 @@
     width: 21px;
     height: 21px;
 }
+
+.ink {
+    display: flex;
+    background-color: black;
+    
+    width: 21px;
+    height: 21px;
+}
