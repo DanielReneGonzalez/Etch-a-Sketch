@@ -6,8 +6,12 @@ for (x = 0; x < 256; x++) {
     container.appendChild(divs);
 }
 
-const divs = document.querySelector('.grid')
+const grid = document.querySelectorAll('.grid');
 
-divs.addEventListener('mouseover', (e) => {
-    e.target.style.color = 'black';
-})
+grid.forEach(element => {
+    element.addEventListener('mouseenter', draw)
+});
+function draw(e){
+    e.target.classList.add('ink');
+    console.log(e)
+}
