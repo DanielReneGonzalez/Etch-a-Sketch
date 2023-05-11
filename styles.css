@@ -16,8 +16,9 @@ body{
 #options {
     display: flex;
     flex-shrink: 2;
-    margin: auto;
-    justify-content: flex-start;
+    margin: 1% auto;
+    justify-content: center;
+    gap: 25px;
 }
 
 #container {
@@ -51,3 +52,10 @@ body{
     height: 6.25px
 }
 
+ul#size {
+    list-style-type: none;
+}
+
+ul#color {
+    list-style-type: none;
+}
