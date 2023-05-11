@@ -32,7 +32,7 @@ body{
     filter: drop-shadow(8px 8px 9px black);
 }
 
-.grid {
+.smallGrid {
     display: flex;
     /*border: 2px solid red;*/
     width: 25px;
@@ -43,6 +43,12 @@ body{
     display: flex;
     width: 12.5px;
     height: 12.5px
+}
+
+.largeGrid {
+    display: flex;
+    width: 6.25px;
+    height: 6.25px
 }
 
 .ink {

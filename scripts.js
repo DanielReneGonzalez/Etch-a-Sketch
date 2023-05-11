@@ -1,17 +1,14 @@
 const container = document.querySelector('#container');
-const grid = document.querySelectorAll('#container.div');
+const grid = document.querySelectorAll('div.smallGrid, div.mediumGrid, div.largeGrid');
 
 
 
 function drawing() {
+    const grid = document.querySelectorAll('div.smallGrid, div.mediumGrid, div.largeGrid');
     grid.forEach(element => {
-        element.addEventListener('mouseenter', draw)
+        element.addEventListener('mouseenter', function draw (e){
+            e.target.style.backgroundColor = 'black' });
     });
-    function draw(e){
-        e.target.style.color = 'black';
-        console.log(e)
-    }
-    
 }
 
 for (x = 0; x < 256; x++) {
