@@ -51,10 +51,3 @@ body{
     height: 6.25px
 }
 
-.ink {
-    display: flex;
-    background-color: black;
-    
-    width: 25px;
-    height: 25px;
-}
