@@ -57,4 +57,68 @@ const largeButton = document.querySelector('#large');
 largeButton.addEventListener('click',largeCanvus)
 
 
+function redColor () {
+    const grid = document.querySelectorAll('div.smallGrid, div.mediumGrid, div.largeGrid');
+    grid.forEach(element => {
+        element.addEventListener('mouseenter', function draw (e){
+            e.target.style.backgroundColor = 'red' });
+    });
+}
 
+const redButton = document.querySelector('#red');
+redButton.addEventListener('click', redColor)
+
+function blueColor () {
+    const grid = document.querySelectorAll('div.smallGrid, div.mediumGrid, div.largeGrid');
+    grid.forEach(element => {
+        element.addEventListener('mouseenter', function draw (e){
+            e.target.style.backgroundColor = 'blue' });
+    });
+}
+
+const blueButton = document.querySelector('#blue');
+blueButton.addEventListener('click', blueColor)
+
+function greenColor () {
+    const grid = document.querySelectorAll('div.smallGrid, div.mediumGrid, div.largeGrid');
+    grid.forEach(element => {
+        element.addEventListener('mouseenter', function draw (e){
+            e.target.style.backgroundColor = 'green' });
+    });
+}
+
+const greenButton = document.querySelector('#green');
+greenButton.addEventListener('click', greenColor)
+
+function yellowColor () {
+    const grid = document.querySelectorAll('div.smallGrid, div.mediumGrid, div.largeGrid');
+    grid.forEach(element => {
+        element.addEventListener('mouseenter', function draw (e){
+            e.target.style.backgroundColor = 'yellow' });
+    });
+}
+
+const yellowButton = document.querySelector('#yellow');
+yellowButton.addEventListener('click', yellowColor)
+
+function blackColor () {
+    const grid = document.querySelectorAll('div.smallGrid, div.mediumGrid, div.largeGrid');
+    grid.forEach(element => {
+        element.addEventListener('mouseenter', function draw (e){
+            e.target.style.backgroundColor = 'black' });
+    });
+}
+
+const blackButton = document.querySelector('#black');
+blackButton.addEventListener('click', blackColor)
+
+function whiteColor () {
+    const grid = document.querySelectorAll('div.smallGrid, div.mediumGrid, div.largeGrid');
+    grid.forEach(element => {
+        element.addEventListener('mouseenter', function draw (e){
+            e.target.style.backgroundColor = 'white' });
+    });
+}
+
+const whiteButton = document.querySelector('#white');
+whiteButton.addEventListener('click', whiteColor)
