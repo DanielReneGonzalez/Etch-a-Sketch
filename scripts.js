@@ -1,12 +1,15 @@
 const container = document.querySelector('#container');
 const grid = document.querySelectorAll('div.smallGrid, div.mediumGrid, div.largeGrid');
 
-
+let mouseDown = false
+document.body.onmousedown = () => (mouseDown = true)
+document.body.onmouseup = () => (mouseDown = false)
 
 function drawing() {
     const grid = document.querySelectorAll('div.smallGrid, div.mediumGrid, div.largeGrid');
     grid.forEach(element => {
-        element.addEventListener('mouseenter', function draw (e){
+        element.addEventListener('mouseover', function draw (e){
+            if (e.type === 'mouseover' && !mouseDown) return
             e.target.style.backgroundColor = 'black' });
     });
 }
@@ -60,7 +63,8 @@ largeButton.addEventListener('click',largeCanvus)
 function redColor () {
     const grid = document.querySelectorAll('div.smallGrid, div.mediumGrid, div.largeGrid');
     grid.forEach(element => {
-        element.addEventListener('mouseenter', function draw (e){
+        element.addEventListener('mouseover', function draw (e){
+            if (e.type === 'mouseover' && !mouseDown) return
             e.target.style.backgroundColor = 'red' });
     });
 }
@@ -71,7 +75,8 @@ redButton.addEventListener('click', redColor)
 function blueColor () {
     const grid = document.querySelectorAll('div.smallGrid, div.mediumGrid, div.largeGrid');
     grid.forEach(element => {
-        element.addEventListener('mouseenter', function draw (e){
+        element.addEventListener('mouseover', function draw (e){
+            if (e.type === 'mouseover' && !mouseDown) return
             e.target.style.backgroundColor = 'blue' });
     });
 }
@@ -82,7 +87,8 @@ blueButton.addEventListener('click', blueColor)
 function greenColor () {
     const grid = document.querySelectorAll('div.smallGrid, div.mediumGrid, div.largeGrid');
     grid.forEach(element => {
-        element.addEventListener('mouseenter', function draw (e){
+        element.addEventListener('mouseover', function draw (e){
+            if (e.type === 'mouseover' && !mouseDown) return
             e.target.style.backgroundColor = 'green' });
     });
 }
@@ -93,7 +99,8 @@ greenButton.addEventListener('click', greenColor)
 function yellowColor () {
     const grid = document.querySelectorAll('div.smallGrid, div.mediumGrid, div.largeGrid');
     grid.forEach(element => {
-        element.addEventListener('mouseenter', function draw (e){
+        element.addEventListener('mouseover', function draw (e){
+            if (e.type === 'mouseover' && !mouseDown) return
             e.target.style.backgroundColor = 'yellow' });
     });
 }
@@ -104,7 +111,8 @@ yellowButton.addEventListener('click', yellowColor)
 function blackColor () {
     const grid = document.querySelectorAll('div.smallGrid, div.mediumGrid, div.largeGrid');
     grid.forEach(element => {
-        element.addEventListener('mouseenter', function draw (e){
+        element.addEventListener('mouseover', function draw (e){
+            if (e.type === 'mouseover' && !mouseDown) return
             e.target.style.backgroundColor = 'black' });
     });
 }
@@ -115,7 +123,8 @@ blackButton.addEventListener('click', blackColor)
 function whiteColor () {
     const grid = document.querySelectorAll('div.smallGrid, div.mediumGrid, div.largeGrid');
     grid.forEach(element => {
-        element.addEventListener('mouseenter', function draw (e){
+        element.addEventListener('mouseover', function draw (e){
+            if (e.type === 'mouseover' && !mouseDown) return
             e.target.style.backgroundColor = 'white' });
     });
 }
