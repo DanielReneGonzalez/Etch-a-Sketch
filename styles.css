@@ -58,4 +58,10 @@ ul#size {
 
 ul#color {
     list-style-type: none;
+    column-count: 2;
+}
+
+ul button{
+     height: 22px;
+    width: 56px;
 }
