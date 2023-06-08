@@ -38,18 +38,21 @@ body{
     /*border: 2px solid red;*/
     width: 25px;
     height: 25px;
+    background: #fff;
 }
 
 .mediumGrid {
     display: flex;
     width: 12.5px;
-    height: 12.5px
+    height: 12.5px;
+    background: #fff;
 }
 
 .largeGrid {
     display: flex;
     width: 6.25px;
-    height: 6.25px
+    height: 6.25px;
+    background: #fff;
 }
 
 ul#size {
@@ -66,7 +69,7 @@ ul#color {
 
 ul button {
     appearance: none;
-    background-color: transparent;
+    background-color: white;
     border: 0.125em solid #1A1A1A;
     border-radius: 0.9375em;
     box-sizing: border-box;
@@ -131,6 +134,27 @@ ul button {
    }
 
    ul #white:hover {
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+   }
+
+   ul #small:hover {
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+   }
+
+   ul #medium:hover {
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+   }
+
+   ul #large:hover {
     color: #000000;
     background-color: rgb(255, 255, 255);
     box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
