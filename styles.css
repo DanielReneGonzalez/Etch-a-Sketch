@@ -1,3 +1,8 @@
+@font-face {
+    font-family: KidDraws;
+    src: url(KidDraws.ttf);
+}
+
 body{
     display: flex;
     flex-direction: row;
@@ -9,8 +14,12 @@ body{
     flex: 1 1 auto;
     width: 100%;
     justify-content: center;
-    margin-bottom: 100px;
 
+}
+
+#title h1 {
+    font-size: 68px;
+    font-family: KidDraws;
 }
 
 #options {
@@ -35,7 +44,6 @@ body{
 
 .smallGrid {
     display: flex;
-    /*border: 2px solid red;*/
     width: 25px;
     height: 25px;
     background: #fff;
@@ -58,6 +66,14 @@ body{
 ul#size {
     list-style-type: none;
    
+}
+
+#canvas h2 {
+    font-family: KidDraws;
+}
+
+#colorSelector h2 {
+    font-family: KidDraws;
 }
 
 ul#color {
