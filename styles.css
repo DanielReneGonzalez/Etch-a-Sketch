@@ -57,7 +57,7 @@ footer {
     width: 25px;
     height: 25px;
     background: #fff;
-    cursor:default;
+    cursor:pointer;
 }
 
 .mediumGrid {
@@ -65,7 +65,7 @@ footer {
     width: 12.5px;
     height: 12.5px;
     background: #fff;
-    cursor:default;
+    cursor:pointer;
 }
 
 .largeGrid {
@@ -73,7 +73,7 @@ footer {
     width: 6.25px;
     height: 6.25px;
     background: #fff;
-    cursor:default;
+    cursor:pointer;
 }
 
 ul#size {
