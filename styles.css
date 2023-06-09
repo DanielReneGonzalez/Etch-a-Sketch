@@ -27,7 +27,8 @@ body{
     flex-shrink: 2;
     margin: 1% auto;
     justify-content: center;
-    gap: 80px;
+    column-gap: 80px;
+    flex-wrap: wrap;
 }
 
 #container {
@@ -196,3 +197,17 @@ ul button {
 li {
 margin: 10px 0px;
  }
+
+#instructions {
+    width: 100%;
+
+}
+#instructions h4 {
+    font-family: KidDraws;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+#instructions p {
+    text-align:center;
+}
