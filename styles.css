@@ -42,11 +42,20 @@ body{
     filter: drop-shadow(8px 8px 9px black);
 }
 
+footer {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+
+}
+
 .smallGrid {
     display: flex;
     width: 25px;
     height: 25px;
     background: #fff;
+    cursor:default;
 }
 
 .mediumGrid {
@@ -54,6 +63,7 @@ body{
     width: 12.5px;
     height: 12.5px;
     background: #fff;
+    cursor:default;
 }
 
 .largeGrid {
@@ -61,6 +71,7 @@ body{
     width: 6.25px;
     height: 6.25px;
     background: #fff;
+    cursor:default;
 }
 
 ul#size {
